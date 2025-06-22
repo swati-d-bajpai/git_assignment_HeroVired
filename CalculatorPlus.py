@@ -20,6 +20,8 @@ class Calculator:
     def square_root(self, x):
         return math.sqrt(x)
 
+    def calculate_circle_area(self, r):
+        return 3.14 * r * r
 
 if __name__ == "__main__":
 
@@ -39,4 +41,8 @@ if __name__ == "__main__":
     num3 = 25
 
     print(f"The square root of {num3} = {calculator.square_root(num3)}")
+
+    radius = 5
+
+    print(f"The area of the circle with radius {radius} ={calculator.calculate_circle_area(radius)}")
 
